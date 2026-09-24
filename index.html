@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ace and Renz 3rd Anniversary ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Floating Hearts -->
+    <div id="hearts-container"></div>
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">OUR LITTLE LOVE STORY</p>
+
+            <h1>Happy 3rd Anniversary</h1>
+
+            <h2>My Mariel ❤️</h2>
+
+            <p class="hero-text">
+                Three years of laughter, memories, little arguments,
+                adventures, and countless reasons to love you.
+            </p>
+
+            <button class="main-button" onclick="scrollToSection('story')">
+                Begin Our Story ↓
+            </button>
+
+        </div>
+
+        <div class="scroll-indicator">
+            ↓
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         OUR STORY
+    ========================== -->
+
+    <section id="story" class="section">
+
+        <div class="section-heading">
+
+            <p class="section-label">CHAPTER ONE</p>
+
+            <h2>Our Story</h2>
+
+            <p>
+                Three years may sound like a long time,
+                but with you, it feels like our story has only just begun.
+            </p>
+
+        </div>
+
+
+        <div class="timeline">
+
+            <!-- MEMORY 1 -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-date">
+                    Year 1
+                </div>
+
+                <div class="memory-card"
+                     onclick="openMemory(
+                     'The Beginning ❤️',
+                     'This was where our beautiful story began. I may not have known what the future would bring,but I knew that meeting you would become one of the most important moments of my life. You remember this picture together we were in Anilao celebrating Banaag Festival',
+                     'memory1.jpeg'
+                     )">
+
+                    <div class="memory-image">
+                        <img src="memory1.jpeg" alt="Our first memory">
+
+                        <div class="image-overlay">
+                            <span>Click to open ❤️</span>
+                        </div>
+                    </div>
+
+                    <div class="memory-info">
+
+                        <h3>The Beginning</h3>
+
+                        <p>
+                            Where our story started...
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- MEMORY 2 -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-date">
+                    Year 2
+                </div>
+
+                <div class="memory-card"
+                     onclick="openMemory(
+                     'Growing Together 🌷',
+                     'We learned more about each other, created new memories, survived difficult days, and celebrated the beautiful ones. Every moment brought us closer. We are lost in the beauty of Pine Forest of Bucari Leon',
+                     'memory2.jpeg'
+                     )">
+
+                    <div class="memory-image">
+                        <img src="memory2.jpeg" alt="Our second year">
+
+                        <div class="image-overlay">
+                            <span>Click to open ❤️</span>
+                        </div>
+                    </div>
+
+                    <div class="memory-info">
+
+                        <h3>Growing Together</h3>
+
+                        <p>
+                            We became stronger together.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- MEMORY 3 -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-date">
+                    Year 3
+                </div>
+
+                <div class="memory-card"
+                     onclick="openMemory(
+                     'Three Beautiful Years ✨',
+                     'And here we are. Three years later, still choosing each other, still making memories, and still dreaming about the future we will build together. And Enjoying the Scenery of the white sand and blue ocean in Sandbar Conception',
+                     'memory3.jpeg'
+                     )">
+
+                    <div class="memory-image">
+                        <img src="memory3.jpeg" alt="Our third year">
+
+                        <div class="image-overlay">
+                            <span>Click to open ❤️</span>
+                        </div>
+                    </div>
+
+                    <div class="memory-info">
+
+                        <h3>Three Beautiful Years</h3>
+
+                        <p>
+                            And our story continues...
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PHOTO MEMORIES
+    ========================== -->
+
+    <section class="section memories-section">
+
+        <div class="section-heading">
+
+            <p class="section-label">CHAPTER TWO</p>
+
+            <h2>Our Little Memories 📸</h2>
+
+            <p>
+                A collection of moments that I never want to forget.
+            </p>
+
+        </div>
+
+
+        <div class="photo-grid">
+
+            <div class="photo-card"
+                 onclick="openPhoto('Our favorite day ❤️', 'photo1.jpeg')">
+
+                <img src="photo1.jpeg">
+
+                <div class="photo-caption">
+                    <h3>That Day ❤️</h3>
+                    <p>One of my favorite view when you ask me a coffee date and choose to watch the sunset before leaving the place.</p>
+                </div>
+
+            </div>
+
+
+            <div class="photo-card"
+                 onclick="openPhoto('Us being us 😂', 'photo2.jpeg')">
+
+                <img src="photo2.jpeg">
+
+                <div class="photo-caption">
+                    <h3>Just Us</h3>
+                    <p>The moments that make me smile when you ask me a quick date near at church and we found the Hidden Barrel which the food made it our favorite.</p>
+                </div>
+
+            </div>
+
+
+            <div class="photo-card"
+                 onclick="openPhoto('A beautiful memory 🌷', 'photo3.jpeg')">
+
+                <img src="photo3.jpeg">
+
+                <div class="photo-caption">
+                    <h3>A Beautiful Day</h3>
+                    <p>A moment I wish I could replay. Exploring coffee shops in province, not our first coffee shop option but the 14th Beanery teach us to appreciate little things.</p>
+                </div>
+
+            </div>
+
+
+            <div class="photo-card"
+                 onclick="openPhoto('Another chapter ❤️', 'photo4.jpeg')">
+
+                <img src="photo4.jpeg">
+
+                <div class="photo-caption">
+                    <h3>Another Chapter</h3>
+                    <p>Another memory with you, trying Ohana Cafe in Guimbal as a new spot to drink coffee beside the beach.</p>
+                </div>
+
+            </div>
+
+
+            <div class="photo-card"
+                 onclick="openPhoto('Forever favorite 🥰', 'photo5.jpeg')">
+
+                <img src="photo5.jpeg">
+
+                <div class="photo-caption">
+                    <h3>Forever Favorite</h3>
+                    <p>A memory I will always keep. We celebrate your Birthday at Vikings as a simple dinner together.</p>
+                </div>
+
+            </div>
+
+
+            <div class="photo-card"
+                 onclick="openPhoto('And many more to come ✨', 'photo6.jpeg')">
+
+                <img src="photo6.jpeg">
+
+                <div class="photo-caption">
+                    <h3>To Be Continued...</h3>
+                    <p>Because our story isn't over. We decided to stop by in the Coffee Break before a long and joyfull ride with friends.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         REASONS
+    ========================== -->
+
+    <section class="section reasons-section">
+
+        <div class="section-heading">
+
+            <p class="section-label">CHAPTER THREE</p>
+
+            <h2>Reasons Why I Love You ❤️</h2>
+
+            <p>
+                I could probably write thousands,
+                but here are just a few.
+            </p>
+
+        </div>
+
+
+        <div class="reasons-container">
+
+            <div class="reason-card">
+
+                <div class="reason-number">01</div>
+
+                <div class="reason-icon">❤️</div>
+
+                <h3>Your Heart</h3>
+
+                <p>
+                    I love how much you care, how you love,
+                    and how you make the people around you feel special.
+                </p>
+
+            </div>
+
+
+            <div class="reason-card">
+
+                <div class="reason-number">02</div>
+
+                <div class="reason-icon">😊</div>
+
+                <h3>Your Smile</h3>
+
+                <p>
+                    Your smile has this incredible way of making
+                    even an ordinary day feel a little better.
+                </p>
+
+            </div>
+
+
+            <div class="reason-card">
+
+                <div class="reason-number">03</div>
+
+                <div class="reason-icon">🌷</div>
+
+                <h3>The Way You Care</h3>
+
+                <p>
+                    I notice the little things you do,
+                    even when you think I don't.
+                </p>
+
+            </div>
+
+
+            <div class="reason-card">
+
+                <div class="reason-number">04</div>
+
+                <div class="reason-icon">😂</div>
+
+                <h3>You Make Me Laugh</h3>
+
+                <p>
+                    Life is simply more fun when you're around.
+                    Even the random and silly moments become memories.
+                </p>
+
+            </div>
+
+
+            <div class="reason-card">
+
+                <div class="reason-number">05</div>
+
+                <div class="reason-icon">🤝</div>
+
+                <h3>You Stay</h3>
+
+                <p>
+                    Through good days and difficult ones,
+                    I appreciate every time you choose us.
+                </p>
+
+            </div>
+
+
+            <div class="reason-card">
+
+                <div class="reason-number">06</div>
+
+                <div class="reason-icon">∞</div>
+
+                <h3>Because You're You</h3>
+
+                <p>
+                    At the end of everything,
+                    I don't need another reason. I simply love you.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PRIVATE MESSAGE
+    ========================== -->
+
+    <section class="section private-section">
+
+        <div class="private-box">
+
+            <div class="lock-icon">
+                🔐
+            </div>
+
+            <p class="section-label">
+                SOMETHING PRIVATE
+            </p>
+
+            <h2>A Message Just For You</h2>
+
+            <p>
+                There is something here that only you can unlock.
+            </p>
+
+            <div class="password-area">
+
+                <input
+                    type="password"
+                    id="passwordInput"
+                    placeholder="Enter our secret password"
+                    onkeydown="checkEnter(event)"
+                >
+
+                <button onclick="unlockMessage()">
+                    Unlock My Heart ❤️
+                </button>
+
+            </div>
+
+            <p id="passwordError"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PRIVATE LETTER
+    ========================== -->
+
+    <section id="privateMessage" class="section private-message hidden">
+
+        <div class="letter">
+
+            <p class="letter-small">
+                YOU FOUND IT ❤️
+            </p>
+
+            <h2>For You, My Mariel</h2>
+
+            <div class="letter-content">
+
+                <p>
+                    My Mariel,
+                </p>
+
+                <p>
+                    Three years ago, I never could have imagined
+                    how many beautiful memories we would create together.
+                    We've laughed, we've grown, we've had difficult days,
+                    and we've experienced moments that I will remember
+                    for the rest of my life.
+                </p>
+
+                <p>
+                    The reason why I choose you again is because, deep inside my heart,
+                    I already know that you are the one. And after three years, I can say that
+                    my heart was right. Why? Because you have always been here for me, no matter what.
+                    Through every up and down, we held each other's hands and never let go. We help one
+                    another grow, reach our dreams, and become successful. We started building our own
+                    future together, little by little. So let's keep holding on to each other, because
+                    I know that one day, we will make it. We will achieve everything we dreamed of together.
+                    Thank you for your unconditional love. Thank you for never failing to send me and fetch
+                    me from work every day. Thank you for always being with me wherever I go. Thank you for
+                    cooking real and delicious food for me, and for taking care of me whenever I am sick or
+                    not feeling well. Thank you for always making me smile. Thank you for understanding me
+                    in every aspect of my life. Most especially, thank you for respecting my decisions.
+                    You never interfere with the dreams and choices I make because you understand that
+                    many of them are dreams I have carried since I was a child. You support me, you trust
+                    me, and you allow me to become the person I always wanted to be.
+                </p>
+
+                <p>
+                    You never fail to amaze me with everything you do, and I truly appreciate you more than words can explain.
+                    I still remember when we were just starting. You were grumpy. You had a short temper. You couldn't easily
+                    express your true feelings, and whenever something was bothering you, you would hide it instead of telling
+                    me what was wrong. But throughout these three years, I watched you grow. I tried to help you become a better
+                    person. I taught you some of the realities of life, helped you understand your emotions, and encouraged you
+                    to open your heart and share your thoughts without hesitation. And now, I am so happy because you finally
+                    know how to express yourself. You know how to control your emotions. You know how to communicate your
+                    thoughts and feelings. You learned how to open up to me. But I also want you to know that I didn't build you alone.
+                    You also chose to build yourself.You helped yourself become better, and you allowed me to be part of that journey.
+                    And that is something I will always be proud of.
+                </p>
+
+                <p>
+                    I don't know exactly what the future will look like, but I know who I want beside me while we discover it.
+                    Three years may sound short compared to couples who have been together for five, ten, or even more years.
+                    Some are already building their own families and creating a different chapter in their lives. But I will never
+                    compare our story to theirs. Because we have our own story. And our story is the one I love the most. For three years,
+                    the trust is still there. The loyalty is still there. The respect is still there. And most importantly, the unconditional
+                    love is still there. I know we are not a perfect couple. We argue. We misunderstand each other. We have difficult days.
+                    We face problems that sometimes feel bigger than us. But whenever challenges come, we always find our way back to the good
+                    memories, the laughter, the little victories, the battles we survived, and all the moments we conquered together. And somehow,
+                    through all of it, love and respect always bring us back to each other. That is what makes our relationship special to me.
+                    We don't have to be perfect. We just have to continue choosing each other. Again and again. Through the good days and the bad days.
+                    Through winning and losing. Through happiness and sadness. Through success and failure. Through every up and down that life gives us.
+                    And above everything else, we always put God at the center of our relationship. There were times when He gave us bigger battles
+                    than we expected. There were moments when we questioned why certain things were happening. But He never failed to help us.
+                    He continued to guide us, protect us, and give us strength. That is why we will continue to praise Him through success or defeat,
+                    through winning or losing, through happiness or sadness, and through every up and down. We will continue to have faith in Him,
+                    love Him, and respect Him, because everything we have today is a blessing from Him. And as we continue building our future together,
+                    I hope we never forget where we started, how far we've come, and how many things we have already conquered together. Three years down.
+                    And hopefully, a lifetime to go. I would still choose you. In every lifetime. In every situation. In every version of our story.
+                    I would still choose your hand to hold. So let's keep holding on. Let's keep growing. Let's keep choosing each other. Let's keep God
+                    at the center. And someday, when we look back at these three years, I hope we can smile and say,"We made it. We really made it."
+                    Happy 3rd Anniversary, my love.
+                    Thank you for being my partner, my safe place, my biggest support, and the person I choose to build my future with.
+                    I love you, always and unconditionally. ❤️
+                </p>
+
+                <p>
+                    You.
+                </p>
+
+                <p class="signature">
+                    Happy 3rd Anniversary ❤️<br>
+                    I love you, always.
+                </p>
+
+            </div>
+
+            <button
+                class="surprise-button"
+                onclick="openFinalSurprise()">
+
+                One More Surprise 🎁
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FINAL SURPRISE
+    ========================== -->
+
+    <section id="finalSurprise" class="final-surprise hidden">
+
+        <div class="surprise-content">
+
+            <div class="big-heart">
+                ❤️
+            </div>
+
+            <p class="section-label">
+                OUR NEXT CHAPTER
+            </p>
+
+            <h2>
+                This Isn't The End...
+            </h2>
+
+            <p class="final-text">
+
+                Three years down.
+
+                <br><br>
+
+                A lifetime to go.
+
+                <br><br>
+
+                I want more random adventures,
+                more late-night conversations,
+                more laughter,
+                more pictures,
+                more memories,
+                and more ordinary days with you.
+
+                <br><br>
+
+                Because somehow,
+                ordinary days become extraordinary
+                when I'm with you.
+
+                <br><br>
+
+                <strong>
+                    Here's to us. ❤️
+                </strong>
+
+            </p>
+
+            <div class="forever">
+                3 YEARS
+                <span>∞</span>
+                FOREVER
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         MEMORY MODAL
+    ========================== -->
+
+    <div id="memoryModal" class="modal">
+
+        <div class="modal-content">
+
+            <button class="close-button" onclick="closeMemory()">
+                ×
+            </button>
+
+            <img id="modalImage">
+
+            <div class="modal-text">
+
+                <p class="section-label">
+                    A MEMORY
+                </p>
+
+                <h2 id="modalTitle"></h2>
+
+                <p id="modalDescription"></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         PHOTO MODAL
+    ========================== -->
+
+    <div id="photoModal" class="modal">
+
+        <div class="photo-modal-content">
+
+            <button class="close-button" onclick="closePhoto()">
+                ×
+            </button>
+
+            <img id="photoModalImage">
+
+            <h3 id="photoModalTitle"></h3>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         MUSIC
+    ========================== -->
+
+    <audio id="backgroundMusic" loop>
+
+        <source src="music/our-song.mp3" type="audio/mpeg">
+
+    </audio>
+
+    <button
+        id="musicButton"
+        class="music-button"
+        onclick="toggleMusic()">
+
+        🎵
+
+    </button>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            Made with ❤️ for our 3rd Anniversary
+        </p>
+
+        <p>
+            Our story continues...
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
