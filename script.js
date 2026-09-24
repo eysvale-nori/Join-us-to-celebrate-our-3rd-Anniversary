@@ -266,33 +266,28 @@ function openFinalSurprise() {
    MUSIC
 ========================================= */
 
+const music = document.getElementById("backgroundMusic");
+const musicButton = document.getElementById("musicButton");
+
 let musicPlaying = false;
 
 
+/* PLAY / PAUSE MUSIC */
+
 function toggleMusic() {
 
-    const music =
-        document.getElementById("backgroundMusic");
-
-    const button =
-        document.getElementById("musicButton");
-
-
-    if (!musicPlaying) {
+    if (music.paused) {
 
         music.play()
             .then(() => {
 
                 musicPlaying = true;
-
-                button.textContent = "🔊";
+                musicButton.textContent = "🔊";
 
             })
-            .catch(() => {
+            .catch((error) => {
 
-                alert(
-                    "Please interact with the page first before playing the music."
-                );
+                console.error("Music error:", error);
 
             });
 
@@ -302,9 +297,31 @@ function toggleMusic() {
 
         musicPlaying = false;
 
-        button.textContent = "🎵";
+        musicButton.textContent = "🎵";
 
     }
+
+}
+
+
+/* START MUSIC AFTER USER INTERACTION */
+
+function startStory() {
+
+    music.play()
+        .then(() => {
+
+            musicPlaying = true;
+            musicButton.textContent = "🔊";
+
+        })
+        .catch((error) => {
+
+            console.error("Music could not start:", error);
+
+        });
+
+    scrollToSection("story");
 
 }
 
